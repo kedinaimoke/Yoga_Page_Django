@@ -20,7 +20,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('yoga_blog/', include('yoga_blog.urls')),
+    path('yoga_blog/', include('yoga_blog.urls', namespace='yoga_blog')),
+    path('yoga_home/', include('yoga_home.urls', namespace='yoga_home')),
+    path('yoga_contact/', include('yoga_contact.urls', namespace='yoga_contact')),
+    path('yoga_classes/', include('yoga_classes.urls', namespace='yoga_classes')),
+    path('yoga_about/', include('yoga_about.urls', namespace='ypga_About')),
 ]
 
 if settings.DEBUG:

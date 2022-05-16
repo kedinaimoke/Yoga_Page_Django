@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'yoga_blog',
+    'yoga_home',
+    'yoga_contact',
+    'yoga_classes',
+    'yoga_about',
 ]
 
 MIDDLEWARE = [

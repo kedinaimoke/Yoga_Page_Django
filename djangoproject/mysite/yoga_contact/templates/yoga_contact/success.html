@@ -1,0 +1,43 @@
+{% load static %}
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Classes - Belle &amp; Carrie Rehabilitation Yoga Web Template</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+    <script type='text/javascript' src='js/mobile.js'></script>
+</head>
+<body>
+<div id="header">
+    <h1><a href="{% url 'yoga_home:homepage' %}">Belle &amp; Carrie <span>Rehabilitation Yoga</span></a></h1>
+    <ul id="navigation">
+        <li>
+            <a href="{% url 'yoga_home:homepage' %}">Home</a>
+        </li>
+        <li>
+            <a href="{% url 'yoga_about:about' %}">About</a>
+        </li>
+        <li>
+            <a href="{% url 'yoga_classes:classes' %}">Classes</a>
+            <ul>
+                <li>
+                    <a href="{% url 'yoga_classes:instructors' %}">Instructors</a>
+                </li>
+            </ul>
+        </li>
+        <li class="current">
+            <a href="{% url 'yoga_contact:contact' %}">Contact</a>
+        </li>
+        <li>
+            <a href="{% url 'yoga_blog:blog' %}">Blog</a>
+        </li>
+    </ul>
+</div>
+<div id="body">
+    <h2>Thank you for your inquiry!</h2>
+    <p>Your info and message was saved successfully.</p>
+    <p class="my-5"><a href="{% url 'yoga_contact:contact' %}"> Click to go back to contact page</a></p>
+</div>
+</body>
