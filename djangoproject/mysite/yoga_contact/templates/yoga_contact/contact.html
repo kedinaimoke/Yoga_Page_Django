@@ -42,7 +42,7 @@
 			{% csrf_token %}
 			<h3>Inquiries</h3>
 			<label>
-				<span>{{form}}</span>
+				<span>{{form.as_p}}</span>
 			</label>
 			<input type="submit" id="send" value="Send">
 		</form>

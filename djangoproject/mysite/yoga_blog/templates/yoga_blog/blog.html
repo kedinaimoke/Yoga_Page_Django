@@ -43,7 +43,7 @@
 		<li>
 			<img src="{{post.image.url}}" alt="image">
 			<h3><a href="{% url 'yoga_blog:singlepost' pk=post.pk %}">{{post.title}}</a></h3>
-			<span>{{post.date}}</span>
+			<span>Uploaded on: {{post.created_at}}. Last updated: {{post.updated_at}}</span>
 			<p>
 				{{post.text}}
 			</p>

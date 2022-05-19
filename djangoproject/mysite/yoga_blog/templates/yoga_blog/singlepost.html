@@ -1,5 +1,5 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <!-- Website template by freewebsitetemplates.com -->
 <html>
 <head>
@@ -29,7 +29,7 @@
 				</ul>
 			</li>
 			<li>
-				<a href="{% url 'yoga_contact:contact' %}"">Contact</a>
+				<a href="{% url 'yoga_contact:contact' %}">Contact</a>
 			</li>
 			<li>
 				<a href="{% url 'yoga_blog:blog' %}">Blog</a>
@@ -37,11 +37,11 @@
 		</ul>
 	</div>
 	<div id="body">
-		<h2>Details!</h2>
+		<h2>{{post.title}} Details.</h2>
 		<div class="content">
 			<div class="article">
 					<h3>{{post.title}}</h3>
-					<span>{{post.date}}</span>
+					<span>{{post.updated_at}}</span>
 					<img src="{{post.image.url}}" alt="image">
 					<p>
 						{{post.text}}

@@ -36,8 +36,8 @@
     </ul>
 </div>
 <div id="body">
-    <h2>Thank you for your inquiry!</h2>
-    <p>Your info and message was saved successfully.</p>
+    <h2>Thank you for your inquiry {{name}}!</h2>
+    <p>Your info and message was saved successfully. We have sent a message to your email: {{recipient}}</p>
     <p class="my-5"><a href="{% url 'yoga_contact:contact' %}"> Click to go back to contact page</a></p>
 </div>
 </body>
